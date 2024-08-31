@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Finite Automata Simulator</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="left-section">
+                <h1>Finite Automata Simulator 🤖</h1>
+                <table>
+                    <tr>
+                        <td><b>Alphabet:</b><sup class="must-provide">*</sup><br>
+                            <span class="hints">(comma separated)</span></td>
+                        <td>
+                            <textarea class="textboxes" id="alphabet" cols="50" rows="2" placeholder="a, b, c, ..."></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>States:</b><sup class="must-provide">*</sup><br>
+                            <span class="hints">(comma separated)</span></td>
+                        <td>
+                            <textarea class="textboxes" id="states" cols="50" rows="2" placeholder="q0, q1, q2, ..."></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 32ch;"><b>Accepting States:</b><br>
+                            <span class="hints">(comma separated)</span></td>
+                        <td>
+                            <textarea class="textboxes" id="acceptingStates" cols="50" rows="2" placeholder="q1, q2, ..."></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Initial State</b><sup class="must-provide">*</sup>:</td>
+                        <td>
+                            <textarea class="textboxes" id="initialState" cols="50" rows="1" placeholder="q0"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Transitions:</b> <br> 
+                            <span class="hints">(separated within transition, transitions separated by a slash)</span></td>
+                        <td>
+                            <textarea class="textboxes" id="transitions" cols="50" rows="5" placeholder="q0, a, q1 / q0, b, q2 / ..."></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Input</b>:</td>
+                        <td>
+                            <textarea class="textboxes" id="word" cols="50" rows="1" placeholder="supercalifragilisticexpialidocious"></textarea>
+                        </td>
+                    </tr>
+                </table>
+
+                <h2>Actions</h2>
+                <button id="random-word" class="button">Random Input</button>
+                <button id="run" class="button">Run</button>
+                <button id="random-automaton" class="button">Random Automaton</button>
+                <button id="submit" class="button">Submit Automaton</button> 
+                <button id="reset" class="button">Reset</button> 
+
+                <h2>Settings</h2>
+                <table>
+                    <tr>
+                        <td>
+                            ⏱️ Step Duration (ms): <input id="delay" type="number" value="1000"></input>
+                        </td>
+                        <td>|</td>
+                        <td>
+                            <input id="determinism" type="checkbox", name="determinism">
+                                <label for="determinism">🔄 Deterministic</label>
+                            </input>
+                        </td>
+                    </tr>
+                </table> 
+                
+                <h2>Results</h2>
+                <output id="error" class="results-hidden"><br></output>
+                <output id="no-errors">👍 No errors.<br></output>
+                <output id="bad-result" class="results-hidden">🔴 The word got rejected.</output>
+                <output id="good-result" class="results-hidden">🟢 The word got accepted.</output>
+            </div>
+            <div class="right-section">
+                <canvas id="canvas" width="900" height="900"></canvas>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
