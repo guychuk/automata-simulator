@@ -16,7 +16,6 @@
   <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white">
 </p>
 
----
 
 ## 🧠 Overview
 
@@ -24,7 +23,6 @@ This is a simulator for various types of automata, built with TypeScript. It all
 - ✅ *DFA* (Deterministic Finite Automaton)  
 - 🔀 *NFA* (Non-deterministic Finite Automaton)
 
----
 
 ## ✨ Features
 
@@ -40,7 +38,6 @@ This is a simulator for various types of automata, built with TypeScript. It all
 - 🧾 **Clear Results**  
   Displays simulation results in a user-friendly format.
 
----
 
 ## 💻 Local Installation
 
@@ -74,7 +71,6 @@ This is a simulator for various types of automata, built with TypeScript. It all
     ```
     - Visit [http://localhost:8080](http://localhost:8080)
 
----
 
 ## 🧪 Usage
 
@@ -88,7 +84,6 @@ This is a simulator for various types of automata, built with TypeScript. It all
    - (Optional) Adjust step duration.
    - Click **"Run"** to start simulation.
 
----
 
 ## 🎥 Demo
 
@@ -100,8 +95,16 @@ This shows an automaton checking if a binary number is divisible by 3.
 - `1011` (11) → ❌ Not divisible  
 - `1100` (12) → ✅ Divisible
 
----
 
 ## 🌐 Live Demo
 
 Try it now on GitHub Pages 👉 [**Live Demo**](https://guychuk.github.io/automata-simulator/).
+
+
+## 📚 Project History
+
+This project was originally developed as part of the [`white-rabbit`](https://github.com/guychuk/white-rabbit) repository.
+
+To view the full commit history and earlier development, visit:  
+➡️ [`white-rabbit 🐇`](https://github.com/guychuk/white-rabbit)
+
