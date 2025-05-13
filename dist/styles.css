@@ -1,0 +1,109 @@
+body {
+    font-family: Inter;
+}
+
+.must-provide {
+    color:crimson;
+}
+
+.button {
+    font-family:Inter;
+    font-size:large;
+    border-width: 1.5px;
+}
+
+#run {
+    background-color:gold;
+    font-weight: bold;
+}
+
+#run:active {
+    background-color:goldenrod;
+    font-weight: bold;
+}
+
+#random-word {
+    background-color:darkseagreen;
+}
+
+#random-word:active {
+    background-color:cadetblue;
+}
+
+#submit {
+    background-color:lightsteelblue;
+    font-weight: bold;
+}
+
+#submit:active {
+    background-color: lightslategrey;
+    font-weight: bold;
+}
+
+#random-automaton {
+    background-color:pink;
+}
+
+#random-automaton:active {
+    background-color:plum;
+}
+
+#reset {
+    background-color:lightgray;
+}
+
+#reset:active {
+    background-color:darkgrey;
+}
+
+#control {
+    align-content: center;
+}
+
+#delay {
+    font-family: Inter;
+}
+
+.textboxes {
+    font-family:'Courier New', Courier, monospace;
+}
+
+.hints {
+    font-size: small;
+}
+
+.container {
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+
+.left-section {
+    flex: 0 0 80ch;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.right-section {
+    flex: 1 1 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#error {
+    color:crimson;
+}
+
+#canvas {
+    width: 900px;
+    height: 900px;
+}
+
+.control {
+    text-align: right;
+}
+
+.results-hidden {
+    display: none;
+}

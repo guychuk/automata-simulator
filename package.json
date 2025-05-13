@@ -5,13 +5,16 @@
   "main": "index.js",
   "scripts": {
     "serve": "webpack-dev-server",
-    "build": "webpack",
-    "test": "jest"
+    "test": "jest",
+    "build": "webpack --mode production",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "author": "Guy Moalem",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^29.5.12",
+    "copy-webpack-plugin": "^13.0.0",
+    "gh-pages": "^6.3.0",
     "jest": "^29.7.0",
     "ts-jest": "^29.2.5",
     "ts-loader": "^9.5.1",
@@ -19,5 +22,6 @@
     "webpack": "^5.94.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4"
-  }
+  },
+  "homepage": "https://github.github.io/automata-simulator"
 }
