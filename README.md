@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <strong>A simple automata simulator.</strong>
+  <strong>An automata simulator.</strong>
 </p>
 
 <p align="center">
